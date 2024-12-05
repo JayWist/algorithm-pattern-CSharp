@@ -63,7 +63,7 @@ public ListNode DeleteDuplicates2(ListNode head)
     while (curr.next != null)
     {
         ListNode next = curr.next;
-        if (next.next == null || next.next.val != next.val)
+        if (next.next == null && next.next.val != next.val)
         {
             curr = curr.next;
         }
